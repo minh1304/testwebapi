@@ -26,17 +26,6 @@ namespace SuperHeroAPI.Services.SuperHeroService
             }
 
         }
-        /*            var check = _context.SuperHeroes.FirstOrDefaultAsync(h => h.Id == hero.Id || h.Name == hero.Name);
-                    if (check is null)
-                    {
-                        await _context.SuperHeroes.AddAsync(hero);
-                        await _context.SaveChangesAsync();
-                        return await _context.SuperHeroes.ToListAsync();
-                    }
-                    else
-                    {
-                        return null;
-                    }*/
 
         public async Task<List<SuperHero>>? DeleteHero(int? id)
         {
